@@ -1,0 +1,17 @@
+body{
+    background-color: #f3d2c1;
+}
+
+h1{
+    color: #001858;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 700; 
+}
+
+#caja1{
+    background-color: red;
+}
+
+#caja2{
+    background-color:green
+}
