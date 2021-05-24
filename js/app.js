@@ -37,14 +37,7 @@ class UI {
   imprimirAlerta(mensaje, tipo) {
     // Crea el div
     const divMensaje = document.createElement("div");
-    divMensaje.classList.add(
-      "text-center",
-      "alert",
-      "d-block",
-      "col-12",
-      "mt-3"
-    );
-
+    divMensaje.classList.add("text-center", "alert", "alert-primary", "d-block", "col-12", "mt-3");
     // Si es de tipo error agrega una clase
     if (tipo === "error") {
       divMensaje.classList.add("alert-danger");
@@ -62,7 +55,7 @@ class UI {
     // Quitar el alert despues de 3 segundos
     setTimeout(() => {
       divMensaje.remove();
-    }, 5000);
+    }, 3000);
   }
 
   imprimirCitas({ citas }) {
@@ -168,14 +161,7 @@ function nuevaCita(e) {
   const { mascota, propietario, telefono, fecha, hora, sintomas } = citaObj;
 
   //validar
-  if (
-    mascota === "" ||
-    propietario === "" ||
-    telefono === "" ||
-    fecha === "" ||
-    hora === "" ||
-    sintomas === ""
-  ) {
+  if (mascota === "" || propietario === "" || telefono === "" || fecha === "" || hora === "" || sintomas === "") {
     ui.imprimirAlerta("Todos los mensajes son Obligatorios", "error");
 
     return;
@@ -187,6 +173,7 @@ function nuevaCita(e) {
 
     ui.imprimirAlerta("Guardado Correctamente");
 
+    // regresar el estado orignal del boton
     formulario.querySelector('button[type="submit"]').textContent = "Crear Cita";
 
     editando = false;
