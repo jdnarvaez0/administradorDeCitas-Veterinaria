@@ -1,23 +1,44 @@
-body{
-    background-color: #06111C;
-    color: #E9F0F2;
+body {
+  background-color: #06111c;
+  color: #e9f0f2;
 }
 
-h1{
-    color: #FFFFFF;
-    font-family: 'KoHo', sans-serif;
-    font-weight: 700; 
+h1 {
+  color: #ffffff;
+  font-family: "KoHo", sans-serif;
+  font-weight: 700;
 }
 
-h2{
-    color: #E9F0F2;
+h2 {
+  color: #e9f0f2;
 }
 
-#contenido{
-    background-color: #384A80;
-    border-radius: 10px;
+#contenido {
+  background-color: #384a80;
+  border-radius: 10px;
 }
 
-.btn{
-    background-color: #1C2540;
+.btn {
+  background-color: #1c2540;
+}
+
+.btn svg{
+  width: 25px;
+}
+
+.cita {
+  border: 1px solid #06111c;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: -1px 1px 15px 5px rgba(0, 0, 0, 0.51);
+  box-shadow: -1px 1px 15px 5px rgba(0, 0, 0, 0.51);
+}
+
+.btnEliminar{
+  margin: 8px;
+}
+
+#citas p span{
+  font-family: "KoHo", sans-serif;
+  font-weight: 700;
 }
