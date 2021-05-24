@@ -1,4 +1,6 @@
 {
-    "editor.fontSize": 17,
+    "editor.fontSize": 18,
+    "editor.lineHeight": 23,
+    "editor.fontLigatures": true,
     "editor.tabSize": 2
 }

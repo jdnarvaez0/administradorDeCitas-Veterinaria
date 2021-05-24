@@ -27,6 +27,7 @@ h2 {
 }
 
 .cita {
+  padding: 0;
   border: 1px solid #06111c;
   border-radius: 20px;
   margin-bottom: 10px;
@@ -39,6 +40,16 @@ h2 {
 }
 
 #citas p span{
+  font-size: 18px;
+  font-family: "KoHo", sans-serif;
+  font-weight: 700;
+}
+
+#citas p{
+  margin: 8px;
+}
+
+label{
   font-family: "KoHo", sans-serif;
   font-weight: 700;
 }
